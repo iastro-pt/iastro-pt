@@ -1,0 +1,296 @@
+/*
+ * www.iastro.pt
+ * Instituto de Astrofísica e Ciências do Espaço
+ * 2014 - Manuel Monteiro
+ */
+
+/*
+ * frontpage css file
+ */
+
+/* NEWSBOX */
+#newsBoxWrapper {
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+    width: 1024px;
+    height: 330px;
+}
+
+#newsBoxPrev {
+    float: left;
+    width: 32px;
+    height: 330px;
+}
+
+#newsBoxContainer {
+    float: left;
+    width: 960px;
+    height: 330px;
+}
+
+#newsBoxNext {
+    float: left;
+    width: 32px;
+    height: 330px;
+}
+
+.newsBox {
+    width: 960px;
+    height: 330px;
+}
+
+.newsBoxTitle {
+	width:600px;
+	/*height: 130px;*/
+	border:0px;
+	margin: 0px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.newsBoxTitle SPAN{
+	font-family:'Lato';
+	font-size:41px;
+	font-style:italic;
+	color:#FFF;
+	line-height: 38px;
+	letter-spacing: -1px;
+}
+
+.newsBoxAbstract {
+	width:700px;
+	height: 170px;
+	border:0px;
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 190px;
+}
+
+.newsBoxAbstract SPAN{
+	font-family:'Lato';
+	font-size:18px;
+	color:#FFF;
+	/*letter-spacing:-1px;*/
+	line-height:25px;
+}
+
+.newsBoxLink {
+	height:33px;
+	border:0px;
+	margin-top:14px;
+	padding-left:52px;
+	background:url(../img/followLinks.png) left no-repeat;
+}
+
+.newsBoxLink SPAN{
+	font-family:'Lato';
+	font-size: 14px;
+	color:#FFF;
+	/*letter-spacing: -1px;*/ 
+	line-height: 33px;
+}
+
+.newsBoxLink A{
+	font-family:'Lato';
+	font-size: 14px;
+	color:#FFF;
+	/*letter-spacing: -1px;*/
+	line-height: 33px;
+        text-decoration: none;
+}
+
+.newsBoxLink A:hover {
+	color:#FFF;
+        text-decoration: underline;
+}
+
+
+/* CONTENT BOX */
+.contentBoxWrapper {
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	height:330px;
+}
+
+.contentBoxContainer {
+	width:910px;
+	height:270px;
+	border:0px;
+	margin:0px;
+	padding:20px 25px 0px 25px;
+}
+
+.contentBoxLinksContainer {
+	width:930px;
+	height:40px;
+	border:0px;
+	margin:0px;
+	padding-left:25px;
+}
+
+.boxLinksSpacer {
+	margin: 0px 10px;
+}
+
+.boxTitle {
+    font-family:'Lato';
+    font-weight:300;
+    font-size:50px;
+    letter-spacing: -0.0103em;
+    color:#000;
+    line-height:50px;  
+}
+
+.boxText{
+	font-family:Georgia;
+	font-size:18px;
+	color:#FFF;
+	line-height: 25px;
+}
+
+.boxLinks{
+	font-family:'Lato';
+	font-size: 14px;
+	color:#000;
+	letter-spacing: -1px;
+	line-height: 33px;
+}
+
+.boxLinks A {
+	text-decoration: none;
+	color:#000;
+}
+
+.boxLinks A:hover {
+	color:#FFF;
+}
+
+/* CONTENT BOX - IA */
+#iaBox {
+	background:#00bd9c;
+}
+
+.iaBoxTitle {
+	float:left;
+	width:490px;
+	height:270px;
+	border:0px;
+	margin:0px;
+}
+
+.iaBoxText {
+	float: left;
+	width:420px;
+	height:215px;
+	padding-top:55px;
+}
+
+.iaBoxLinks {
+	height:33px;
+	border:0px;
+	padding-left:52px;
+	background:url(../img/followLinksIA.png) left no-repeat;
+}
+
+
+/* CONTENT BOX - RESEARCH */
+#researchBox {
+	background:#64b5f6;
+}
+
+.researchBoxTitle {
+	padding-left:540px;
+	padding-top:2px;
+	height:52px;
+	border:0px;
+	margin:0px;
+}
+
+.researchBoxText {
+	padding: 16px 196px 0px 196px;
+	height:210px;
+}
+
+.researchBoxLinks {
+	height:33px;
+	border:0px;
+	padding-left:52px;
+	background:url(../img/followLinksResearch.png) left no-repeat;
+}
+
+/* CONTENT BOX - TRAINING */
+#trainingBox {
+	background:#ffb74e;
+}
+
+.trainingBoxTitle {
+	padding-left:54px;
+	padding-top:2px;
+	height:52px;
+	border:0px;
+	margin:0px;
+}
+
+.trainingBoxText {
+	padding: 16px 196px 0px 54px;
+	height:210px;
+}
+
+.trainingBoxLinks {
+	height:33px;
+	border:0px;
+	padding-left:52px;
+	background:url(../img/followLinksTraining.png) left no-repeat;
+}
+
+/* CONTENT BOX - OUTREACH */
+#outreachBox {
+	background:#e57373;
+}
+
+.outreachBoxTitle:lang(en) {
+	float:right;
+	width:280px;
+	height:268px;
+	border:0px;
+	margin:0px;
+	padding-top:2px;
+	padding-left: 10px;
+}
+.outreachBoxTitle:lang(pt) {
+	float:right;
+	width:320px;
+	height:268px;
+	border:0px;
+	margin:0px;
+	padding-top:2px;
+	padding-left: 6px;
+}
+.outreachBoxText:lang(en) {
+	float:right;
+	width:500px;
+	height:264px;
+	border:0px;
+	margin:0px;
+	padding-left:120px;
+	padding-top:6px;
+}
+.outreachBoxText:lang(pt) {
+	float:right;
+	width:550px;
+	height:264px;
+	border:0px;
+	margin:0px;
+	padding-left:30px;
+	padding-top:6px;
+}
+
+.outreachBoxLinks {
+	height:33px;
+	border:0px;
+	padding-left:52px;
+	background:url(../img/followLinksOutreach.png) left no-repeat;
+}
