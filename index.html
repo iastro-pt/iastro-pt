@@ -1,0 +1,392 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Instituto de Astrof&iacute;sica e Ci&ecirc;ncias do Espa&ccedil;o</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/frontpage.css">
+    <link rel="stylesheet" href="/js/bxslider/jquery.bxslider.css">
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                controls: true,
+                pager: true,
+                auto: true,
+                pause: 8000,
+                nextSelector: '#slide-next',
+                prevSelector: '#slide-prev',
+                prevText: '<img src="img/slidePrev.png" style="margin-top: 127px;" />',
+                nextText: '<img src="img/slideNext.png"  style="margin-top: 127px;" />'
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+        function sessionChangeLang() {
+            request = $.ajax({
+                url: "/changeLang.php",
+                type: "post",
+                data: ''
+            });
+            request.done(function (response, textStatus, jqXHR){
+                parent.window.location.reload();
+            });
+        }
+    </script>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>	
+
+<body>
+
+
+<script type="text/javascript">
+    function showHover(img) {
+       if(img) {
+            img.src = '/img/homeButton_on.png';
+       }
+    }
+    function showNormal(img) {
+       if(img) {
+            img.src = '/img/homeButton_off.png';
+       }
+    }
+
+    $(document).ready(function() {
+          $('#goHome').mouseover(function(){
+            showHover($('#goHome').get()[0]);
+        }).mouseout(function(){
+            showNormal($('#goHome').get()[0]);
+        });
+    });
+</script>
+
+<script src="/js/iastro.js" type="text/javascript"></script>
+
+<div id="topBarWrapper">
+    <div id="topBar">
+        <div id="topBarLogo"><a href="/index.html" title="Instituto de Astrof&iacute;sica e Ci&ecirc;ncias do Espa&ccedil;o"><img src="/img/iaLogo.png" alt="Instituto de Astrof&iacute;sica e Ci&ecirc;ncias do Espa&ccedil;o" /></a></div>
+        <div id="topBarMenusContainer">
+            <div id="topBarSysMenu">
+            
+			<span class="socialMenu">  
+                <a href="https://www.facebook.com/iastro.pt" target="_blank"><img src="/img/logo_facebook_off.png" alt="Facebook" title="Facebook" onmouseover="this.src='/img/logo_facebook.png';" onmouseout="this.src='/img/logo_facebook_off.png';" /></a> 
+                <a href="https://plus.google.com/109353463550145326652" target="_blank"><img src="/img/logo_googleplus_off.png" alt="Google+" title="Google+" onmouseover="this.src='/img/logo_googleplus.png';" onmouseout="this.src='/img/logo_googleplus_off.png';" /></a>
+				</span>
+                
+                <span class="sysMenu">
+                    <a href="/ia/jobs.html">JOBS</a>
+                    <a href="/news/latest.html" style="margin-left: 18px;">NEWS</a>
+                    <a href="/ia/contacts.html" style="margin-left: 18px;">CONTACTS</a>
+                </span>
+                
+                <a href="/" title="Home"><img id="goHome" style="margin-left: 18px; vertical-align: middle; margin-bottom: 2px;" src="/img/homeButton_off.png" alt="Home" /></a>
+                
+                <span class="sysMenu" style="margin-left: 18px;" >
+                                            <a href="#" onclick="sessionChangeLang();">PT</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span style="color: #FFF;">EN</span>
+                                        </span>
+                
+            </div>
+            <div id="topBarMainMenuContainer">
+                
+<div id="topBarMainMenu">
+    <nav>
+        <ul>
+            <li><a href="/ia/index.html">+ ABOUT IA</a>
+                <ul>
+                    <li><a href="/ia/index.html">What is IA?</a></li>
+                    <li><a href="/ia/researchers.html">Team</a></li>
+                	<li><a href="/ia/jobs.html">Opportunities</a></li>
+                	<li><a href="/ia/visitorProgram.html">Visitor program</a></li>
+                </ul>
+            </li>
+            <li><a href="/research/index.html">+ RESEARCH</a>
+                <ul>
+                    <li><a href="/research/index.html">Groups and thematic lines</a></li>
+                    <li><a href="/research/projects.html">Projects</a></li>
+                    <li><a href="/research/papers.html">Publications</a></li>
+                    <li><a href="/research/conferences.html">Conferences</a></li>
+                    <li><a href="/research/seminars.html">Seminars</a></li>
+                    <li><a href="/research/tools.html">Tools</a></li>
+                </ul>
+            </li>
+            <li><a href="/training/index.html">+ TRAINING</a>
+                <ul>
+                    <li><a href="/training/index.html">Training at IA</a></li>
+                    <li><a href="http://phd-space.iastro.pt">PHD::SPACE</a></li>
+                    <li><a href="/training/bicProgram.html">Scientific Initiation Studentships</a></li>
+                </ul>
+            </li>
+            <li><a href="/outreach/index.html">+ OUTREACH</a>
+                <ul>
+                    <li><a href="/outreach/index.html">Outreach</a></li>
+                    <li><a href="/outreach/projects.html">Projects</a></li>
+                    <li><a href="/outreach/activities.html">Activities</a></li>
+                    <li><a href="/outreach/media.html">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>            </div>
+        </div>
+    </div>
+</div>    
+
+<div id="bodyContentWrapper">
+        
+    <div id="newsBoxWrapper">
+        <div id="newsBoxPrev"><span id="slide-prev"></span></div>
+        <div id="newsBoxContainer">
+            <ul class="bxslider" style="margin:0px;">
+            
+                <li>
+<div class="newsBox" style="background:url(/img/news/2017ago24_banner.jpg);">	
+    <div class="newsBoxTitle" style=" width:650px; padding-left: 50px;">
+        <span>New worlds await ESPRESSO
+</span>
+    </div>
+    <div class="newsBoxAbstract" style="width:660px; padding-left: 50px;">
+        <span>
+The adventure is about to start for ESPRESSO, the future discoverer of new Earths, co-produced by Instituto de Astrofísica e Ciências do Espaço (IA).
+<div class="newsBoxLink"><a href="/news/news.html?ID=70">MORE</a></div>
+    </div>
+</div>
+</li>
+<li>
+<div class="newsBox" style="background:url(/img/news/2017jul07_banner.jpg);">	
+    <div class="newsBoxTitle" style=" width:650px; padding-left: 50px;">
+        <span>IA researcher awarded the Bronstein Prize for her work into the quantum nature of gravity
+</span>
+    </div>
+    <div class="newsBoxAbstract" style="width:660px; padding-left: 50px;">
+        <span>
+A researcher of Instituto de Astrofísica e Ciências do Espaço (IA) received the Bronstein Prize in recognition of her major advances in Loop Quantum Cosmology.
+<div class="newsBoxLink"><a href="/news/news.html?ID=69">MORE</a></div>
+    </div>
+</div>
+</li>
+<li>
+<div class="newsBox" style="background:url(/img/news/2017jul05_banner.jpg);">	
+    <div class="newsBoxTitle" style=" width:500px; padding-left: 50px;">
+        <span>Evidence discovered for two distinct giant planet populations
+</span>
+    </div>
+    <div class="newsBoxAbstract" style="width:500px; padding-left: 50px;">
+        <span>
+This result, discovered by researchers at the Instituto de Astrofísica e Ciências do Espaço (IA), hints at the existence of two separate formation mechanisms for giant exoplanets.
+<div class="newsBoxLink"><a href="/news/news.html?ID=68">MORE</a></div>
+    </div>
+</div>
+</li>
+
+
+<li>
+<div class="newsBox" style="background:url(/img/news/2017jun22_banner.jpg);">	
+    <div class="newsBoxTitle" style=" width:500px; padding-left: 400px;">
+        <span>Design and Astronomy in display at Fabrica Features
+</span>
+    </div>
+    <div class="newsBoxAbstract" style="width:500px; padding-left: 400px;">
+        <span>
+A design exhibition includes science communication projects, resulting from a partnership between the Instituto de Astrofísica e Ciências do Espaço and the Fine Arts Faculty of the University of Lisbon.
+<div class="newsBoxLink"><a href="/news/news.html?ID=67">MORE&nbsp;&nbsp;&nbsp;(Only in portuguese)</a></div>
+    </div>
+</div>
+</li>
+
+<li>
+<div class="newsBox" style="background:url(/img/news/2017jun20_banner.jpg);">	
+    <div class="newsBoxTitle" style=" width:500px; padding-left: 400px;">
+        <span>European Space Agency Adopts PLATO mission
+</span>
+    </div>
+    <div class="newsBoxAbstract" style="width:500px; padding-left: 400px;">
+        <span>
+This mission, in which Instituto de Astrofísica e Ciências do Espaço (IA) is a partner, was adopted today by ESA?s Scientific Programme Committee.
+<div class="newsBoxLink"><a href="/news/news.html?ID=66">MORE&nbsp;&nbsp;&nbsp;(Only in portuguese)</a></div>
+    </div>
+</div>
+</li>
+ 
+
+<li>
+<div class="newsBox" style="background:url(/img/news/2015Abr09_banner.jpg);">	
+    <div class="newsBoxTitle" style="width:500px;padding-left: 170px;">
+       <span>Want to work with us and help to shape the future of Astrophysics?</span>
+    </div>
+    <div class="newsBoxAbstract" style="width:450px; padding-left: 440px;">
+        <span>See the list of open opportunities</span>
+        <div class="newsBoxLink"><a href="/ia/jobs.html">MORE</a></div>
+    </div>
+</div>
+</li>
+
+
+                
+            </ul>
+        </div>
+        <div id="newsBoxNext"><span id="slide-next"></span></div>
+        <div style="clear:both;"></div>
+    </div>
+
+    
+<div id="iaBox" class="contentBoxWrapper">
+    <div class="contentBoxContainer">
+    	<div class="iaBoxTitle">
+            <span class="boxTitle">INSTITUTE OF<br />ASTROPHYSICS AND<br />SPACE SCIENCES</span>
+        </div>
+        <div class="iaBoxText">
+            <span class="boxText">
+The Instituto de Astrofísica e Ciências do Espaço (IA) is a research infrastructure with a national dimension. 
+    It embodies a bold vision for the development of Astronomy, Astrophysics and Space Sciences 
+    in Portugal, taking full advantage and fully realizing the potential created by the national membership of the 
+    European Space Agency (ESA) and the European Southern Observatory (ESO).             </span>
+         </div>
+    	<div style="clear:both;"></div>
+    </div>
+
+    <div class="contentBoxLinksContainer">
+     	<div class="iaBoxLinks">
+            
+<span class="navLinks">
+    <a href="/ia/index.html">WHAT IS IA?</a>    <span class="navLinksSpacer">|</span>
+    <a href="/ia/researchers.html">TEAM</a>    <span class="navLinksSpacer">|</span>
+    <a href="/ia/jobs.html">OPPORTUNITIES</a>     <span class="navLinksSpacer">|</span>
+    <a href="/ia/visitorProgram.html">VISITOR PROGRAM</a></span>
+     
+        </div>
+    </div>
+</div><div id="researchBox" class="contentBoxWrapper">
+    <div class="contentBoxContainer">
+    	<div class="researchBoxTitle">
+            <span class="boxTitle">RESEARCH</span>
+        </div>
+        <div class="researchBoxText">
+            <span class="boxText">The research and development effort at the IA includes most of the topics presently, and for the next decade, at the forefront of research in Astrophysics and Space Sciences, from the Solar System to the large-scale properties of the Universe, complemented by work on instrumentation and systems with potential use in Astronomy and Astrophysics projects.</span>
+         </div>
+    	<div style="clear:both;"></div>
+    </div>
+    <div class="contentBoxLinksContainer">
+     	<div class="researchBoxLinks">
+            
+<span class="navLinks">
+    <a href="/research/index.html">GROUPS AND THEMATIC LINES</a>    <span class="navLinksSpacer">|</span>
+    <a href="/research/projects.html">PROJECTS</a>    <span class="navLinksSpacer">|</span>
+    <a href="/research/papers.html">PUBLICATIONS</a>    <span class="navLinksSpacer">|</span>
+    <a href="/research/conferences.html">CONFERENCES</a>    <span class="navLinksSpacer">|</span>
+    <a href="/research/seminars.html">SEMINARS</a>    <span class="navLinksSpacer">|</span>
+    <a href="/research/tools.html">TOOLS</a>    
+</span>
+ 
+        </div>
+    </div>
+</div><div id="trainingBox" class="contentBoxWrapper">
+    <div class="contentBoxContainer">
+    	<div class="trainingBoxTitle">
+            <span class="boxTitle">TRAINING</span>
+        </div>
+        <div class="trainingBoxText">
+            <span class="boxText">The provision of advanced training is also at the core of IA, with the support 
+    of teaching and research at undergraduate and postgraduate level in Astronomy, Astrophysics and Space Sciences 
+    related degrees, in particular at the Universities of Lisbon and Porto, where such degrees have more solid 
+    backing. The Doctoral networks PhD::SPACE and DAEPHYS, recently funded by the Foundation for Science and 
+    Technology (FCT), are examples of the commitment of IA in this area.</span>
+         </div>
+    	<div style="clear:both;"></div>
+    </div>
+    <div class="contentBoxLinksContainer">
+     	<div class="trainingBoxLinks">
+            
+<span class="navLinks">
+    <a href="/training/index.html">TRAINING AT IA</a>    <span class="navLinksSpacer">|</span>
+    <a href="http://phd-space.iastro.pt">PHD::SPACE</a>    
+    <span class="navLinksSpacer">|</span>
+    <a href="bicProgram.html">SCIENTIFIC INITIATION STUDENTSHIPS</a></span>
+        </div>
+    </div>
+</div>   <div id="outreachBox" class="contentBoxWrapper">
+    <div class="contentBoxContainer">
+    	<div class="outreachBoxTitle">
+            <span class="boxTitle">OUTREACH</span>
+        </div>
+        <div class="outreachBoxText">
+            <span class="boxText">The public outreach groups of IA are recognized as Outreach ESO partners, engaging in a broad range of public outreach activities, most of them based at the Porto Planetarium and at the Astronomical Observatory of Lisbon. Our main objective in outreach is to be the prime source of information on Astronomy, Astrophysics and Space Sciences topics for the media and the public in Portugal, and to improve the public awareness of the latest and most relevant findings in Astrophysics and Space Sciences.</span>
+         </div>
+    	<div style="clear:both;"></div>
+    </div>
+    <div class="contentBoxLinksContainer">
+     	<div class="outreachBoxLinks">
+            
+<span class="navLinks">
+    <a href="/outreach/index.html">OUTREACH</a>    <span class="navLinksSpacer">|</span>
+    <a href="/outreach/projects.html">PROJECTS</a>
+
+<span class="navLinksSpacer">|</span>
+    <a href="/outreach/activities.html">ACTIVITIES</a>
+
+<span class="navLinksSpacer">|</span>
+    <a href="/outreach/media.html">MEDIA</a></span>
+ 
+        </div>
+    </div>
+</div> 
+</div>
+
+
+<div id="bottomBarWrapper">
+    <div id="bottomBarContainer">
+    	<div class="bbCol bbColInfo">
+            <img style="display:block; margin-bottom: 22px;" src="/img/botLogoIA.jpg" alt="Instituto de AstrofÃ­sica e CiÃªncias do EspaÃ§o" />
+            <a href="http://www.up.pt" target="_blank" title="Universidade do Porto"><img style="display:block; " src="/img/botLogoUPorto.jpg" alt="Universidade do Porto" /></a>
+<a href="https://ciencias.ulisboa.pt/" target="_blank" title="Faculdade de Ci&ecirc;ncias da Universidade de Lisboa"><img style="display:block; margin-top: 12px;" src="/img/botLogoULisboa.jpg"  alt="Faculdade de Ci&ecirc;ncias da Universidade de Lisboa" /></a>
+            <a href="http://www.fct.pt" target="_blank" title="Funda&ccedil;&atilde;o para a Ci&ecirc;ncia e a Tecnologia"><img style="display:block; margin-top:22px;" src="/img/botLogoFCT.jpg" alt="FundaÃ§Ã£o para a CiÃªncia e a Tecnologia" /></a>
+        </div>
+        <div class="bbCol bbColNav">
+            <span style="color:#00bd9c;">ABOUT IA</span>
+            <div style="margin-left:10px;">
+                <span class="bbColItem"><a href="/ia/index.html">What is IA?</a></span>
+                <span class="bbColItem"><a href="/ia/researchers.html">Team</a></span>
+                <span class="bbColItem"><a href="/ia/jobs.html">Opportunities</a></span>
+                <span class="bbColItem"><a href="/ia/visitorProgram.html">Visitor program</a></span>
+            </div>
+        </div>
+        <div class="bbCol bbColNav">
+            <span style="color:#64b5f6;">RESEARCH</span>
+            <div style="margin-left:10px;">
+                <span class="bbColItem"><a href="/research/index.html">Groups and thematic lines</a></span>
+                <span class="bbColItem"><a href="/research/projects.html">Projects</a></span>
+                <span class="bbColItem"><a href="/research/publications.html">Publications</a></span>
+                <span class="bbColItem"><a href="/research/conferences.html">Conferences</a></span>
+                <span class="bbColItem"><a href="/research/seminars.html">Seminars</a></span>
+            </div>
+        </div>
+        <div class="bbCol bbColNav">
+            <span style="color:#ffb74e;">TRAINING</span>
+            <div style="margin-left:10px;">
+                <span class="bbColItem"><a href="/training/index.html">Training at IA</a></span>
+                <span class="bbColItem"><a href="http://phd-space.iastro.pt">PHD::SPACE</a></span>
+                <span class="bbColItem"><a href="bicProgram.html">Sci. Initiation Studentships</a></span>
+            </div>
+        </div>
+        <div class="bbCol bbColNav">
+            <span style="color:#e57373;">OUTREACH</span>
+            <div style="margin-left:10px;">
+                <span class="bbColItem"><a href="/outreach/index.html">Outreach&nbsp;at&nbsp;IA</a></span>
+                <span class="bbColItem"><a href="/outreach/projects.html">Projects</a></span>
+            <span class="bbColItem"><a href="/outreach/activities.html">Outreach activities</a></span>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>    
+</body>
+</html>
